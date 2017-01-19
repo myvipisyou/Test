@@ -50,6 +50,7 @@ class TableViewController: UITableViewController {
 
         let buildingName = buildings[indexPath.row].name
         cell.textLabel?.text = buildingName
+        cell.detailTextLabel?.text = String(buildings[indexPath.row].library)
         return cell
     }
 
